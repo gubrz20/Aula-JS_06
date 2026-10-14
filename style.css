@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+
+  margin-bottom: 20px;
+}
+
+header h1 {
+
+  color: #1e293b;
+  font-size: 28px;
+}
+
+.dashboard {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.card span {
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.card.warning span {
+
+  color: #e11d48;
+}
+
+.main-content {
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 850px) {
+
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-card, .table-card {
+
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2, .table-header h2 {
+
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.form-group {
+
+  margin-bottom: 15px;
+}
+
+.form-group label {
+
+  display: block;
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .filters input, .filters select {
+
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus, .form-group select:focus, .filters input:focus, .filters select:focus {
+
+  border-color: #2563eb;
+}
+
+button {
+
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+
+  background-color: #1d4ed8;
+}
+
+.table-header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters {
+
+  display: flex;
+  gap: 10px;
+}
+
+.filters input {
+
+  width: 180px;
+}
+
+.filters select {
+
+  width: 160px;
+}
+
+table {
+
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+th {
+
+  background-color: #f8fafc;
+  color: #475569;
+}
+
+.status-badge {
+
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-normal {
+
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-critico {
+
+  background-color: #ffe4e6;
+  color: #be123c;
+}
+
+.btn-delete {
+
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-delete:hover {
+    
+  background-color: #dc2626;
+}
