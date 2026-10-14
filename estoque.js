@@ -19,3 +19,11 @@ console.log(categorias.length);
 
 console.log(categorias.indexOf('Calçados'));
 console.log(categorias.includes('Eletronicos'));
+
+for (let i = 0; i < categorias.length; i++) {
+  console.log(categorias[i]);
+}
+
+for (const categoria of categorias) {
+  console.log(categoria);
+}
