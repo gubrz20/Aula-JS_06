@@ -9,3 +9,13 @@ console.log(fornecedores);
 console.log(categorias[0]);
 categorias[1] = 'Calçados';
 console.log(categorias);
+
+categorias.push('Livros');
+categorias.pop();
+categorias.unshift('Brinquedos');
+categorias.shift();
+
+console.log(categorias.length);
+
+console.log(categorias.indexOf('Calçados'));
+console.log(categorias.includes('Eletronicos'));
